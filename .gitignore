@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/node_modules/
+**/package-lock.json.tmp
+**/dist/
+**/.venv/
+*.py[cod]
+*.log
+biblio-tpv-backup*.sql
