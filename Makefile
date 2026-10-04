@@ -40,7 +40,7 @@ format:
 	docker compose --profile test run --build --rm --no-deps backend-tests ruff format app tests
 
 clean:
-	@echo "This target intentionally does not delete database volumes. Run 'docker compose down -v' manually only for disposable data."
+	docker rm -f $(docker ps -a -q) 
 
 purge:
 	docker system prune -a --volumes
